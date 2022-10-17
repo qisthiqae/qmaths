@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+ 
+{% load static %}
+ 
+{% block content %}
+<div class="container-fluid">
+    <div class="container bg-white text-dark shadow" style="margin-top:-200px">
+        <div class="row" style="height: 1190px">
+           <center><br>
+            <h4>Latihan Soal</h4>
+            <div class="container"><br><br>
+                <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Matematika SMP
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <center>
+                                <img style="height:200px" src="{% static 'css/img/img011.png' %}" alt="">
+                                <img style="height:200px" src="{% static 'css/img/img012.png' %}" alt="">
+                            </center>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Matematika SMA
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                                <img style="height:200px" src="{% static 'css/img/img013.png' %}" alt="">
+                                <img style="height:200px" src="{% static 'css/img/img014.png' %}" alt="">
+                        </div>
+                      </div>
+                    </div>
+           </center>
+        </div>
+    </div>
+</div>
+{% endblock %}
+ 
